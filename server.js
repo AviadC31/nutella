@@ -32,28 +32,8 @@ const sequelize = new Sequelize(
         language: 'en',
     }
 )
-// var mysql = require('mysql2');
-// var fs = require('fs');
-// var connection = mysql.createConnection({
-//     host: DB_URL,
-//     database: DB_NAME,
-//     port: DB_PORT,
-//     user: DB_USER,
-//     password: DB_PASS,
-//     ssl: {
-//         // ca: fs.readFileSync('C:/certs/ca-certificate.crt')
-//         rejectUnauthorized: true
-//     }
-// });
-// connection.connect();
-// console.log(connection)
 
 const session = {}
-    // console.log(DB_URL)
-    // console.log(DB_USER)
-    // console.log(DB_PASS)
-    // console.log(DB_NAME)
-    // console.log(DB_PORT)
 
 io.on('connection', function(socket) {
             console.log(`User ${socket.handshake.address} Connected`)
@@ -171,4 +151,4 @@ app.use(express.urlencoded({ extended: false }))
 
 const port = process.env.PORT || 4000
 
-server.listen(port, () => console.log(`Server running on port: ${port}`))
+server.listen(port, () => console.log(`Server amazing running on port: ${port}`))
