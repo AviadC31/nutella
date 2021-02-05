@@ -171,4 +171,4 @@ app.use(express.urlencoded({ extended: false }))
 
 const port = process.env.PORT || 80
 
-server.listen(port, () => console.log(`Server running on port: ${port}`))
+server.listen(port,'3.122.227.52', () => console.log(`Server running on port: ${port}`))
