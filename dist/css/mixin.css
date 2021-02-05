@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'NarkissTam';
+  src: url("../assets/fonts/NarkissTam-Light.woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'NarkissTam';
+  src: url("../assets/fonts/NarkissTam-Regular.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'NarkissTam';
+  src: url("../assets/fonts/NarkissTam-Bold.woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'NarkissTam';
+  src: url("../assets/fonts/NarkissTam-Black.woff");
+  font-weight: 900;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=mixin.css.map */

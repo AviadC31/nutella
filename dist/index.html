@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutella</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+<body>
+
+    <div id="body">
+
+
+        <!-----------------------navbar----------------------->
+        <div id="nav">
+            <picture>
+                <source media="(max-width:1024px)" srcset="./assets/imgs/logo.png">
+                <a href="http://157.245.244.45/">
+                    <img id="logo" src="./assets/imgs/logo.png" />
+                </a>
+            </picture>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="http://157.245.244.45/">
+                            <li>עמוד ראשי</li>
+                        </a>
+                        <!-- <a href="#" onclick="userDetails()">
+                            <li>השארת פרטים</li>
+                        </a> -->
+                        <a href="https://www.rehovot.muni.il/238/">
+                            <li>תקנון פעילות</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-----------------------navbar end----------------------->
+
+        <!-----------------------page:question0----------------------->
+        <div id="rail_head_wrapper">
+            <picture>
+                <source id="rail_head_mob" media="(max-width:1024px)" srcset="./assets/imgs/rail_mob.png">
+                <img id="rail_head" src="./assets/imgs/rail_head.png" />
+            </picture>
+        </div>
+        <div id="rail_head_wrapper_dynamic">
+            <img id="rail_head_dynamic" src="./assets/imgs/rail_head.gif" />
+        </div>
+        <!-- <div id="rail_head_wrapper_dynamic">
+            <picture>
+                <source id="rail_head_mob_dynamic" media="(max-width:1024px)" srcset="./assets/imgs/rail_mob.gif>
+                <img id="rail_head_dynamic" src="./assets/imgs/rail_head.gif" />
+            </picture>
+        </div> -->
+        <p id="title_page2">רגע לפני שמתחילים</p>
+        <p id="sub_title_page2"></p>
+
+        <p id="timer"></p>
+        <section id="options_wrapper" title=".options">
+            <div class="options">
+                <input type="checkbox" id="opt1" />
+                <label for="opt1"></label>
+                <p id="A"></p>
+            </div>
+            <div class="options">
+                <input type="checkbox" id="opt2" />
+                <label for="opt2"></label>
+                <p id="B"></p>
+            </div>
+            <div class="options">
+                <input type="checkbox" id="opt3" />
+                <label for="opt3"></label>
+                <p id="C"></p>
+            </div>
+            <div class="options">
+                <input type="checkbox" id="opt4" />
+                <label for="opt4"></label>
+                <p id="D"></p>
+            </div>
+        </section>
+        <p id="no_answer_selected"></p>
+        <a id="sendFirstAnswer" href="#" onclick="userDetails()">שלח</a>
+        <!-----------------------page:question0 end----------------------->
+
+        <!-----------------------page:wrong----------------------->
+        <a id="backToGame" href="#" onclick="start()">נסה שוב</a>
+        <div id="nutella_regular_wrapper">
+            <img id="nutella_regular" src="./assets/imgs/nutella_regular.png" />
+        </div>
+        <div id="nutella_logo_wrapper">
+            <img id="nutella_logo" src="./assets/imgs/logoHebrew.png" />
+        </div>
+
+        <!-----------------------page:wrong end----------------------->
+
+        <!-----------------------page:home----------------------->
+        <p id="title">!נס חנוכה</p>
+        <p id="sub_title"><img id="nutella_logo_small" src="./assets/imgs/logoHebrew.png" /> עם</p>
+
+        <div id="stars_wrapper">
+            <picture>
+                <source media="(max-width:1024px)" srcset="./assets/imgs/stars_mob.png">
+                <img id="stars" src="./assets/imgs/stars.png" />
+            </picture>
+        </div>
+
+        <p id="title_page1">?מה אתם יודעים על חנוכה</p>
+        <p id="title_page1_2"></p>
+        <p id="title_page1_3"></p>
+        <p id="description_page1">לפניכם 10 שאלות, סובבו את הסביבון ונסו לענות<br class="mob"> על כל<br class="desk"> השאלות לפני שהוא ייפול, בסיום הפעילות <br class="mob">העונה נכון על <br class="desk">מירב השאלות בזמן הקצר ביותר<br class="mob"> יזכה בפרס שווה במיוחד</p>
+        <p id="sub_description_page1">!ארוחת בוקר מפנקת עד הבית לכל המשפחה</p>
+        <a id="btn_page1" href="#" onclick="start()">להתחלה</a>
+        <p id="start_note">השתתפות בשאלון מותרת פעם אחת בלבד*</p>
+
+        <div id="rail_wrapper">
+            <img id="rail" src="./assets/imgs/rail.png" />
+        </div>
+        <!-----------------------page:home end----------------------->
+
+        <!-----------------------page:user details form----------------------->
+        <div id="form_container">
+            <form method="post" action="#">
+                <div class="name_inp">
+                    <input class="inp" type="text" name="name" placeholder="שם מלא">
+                    <p class="error"></p>
+                </div>
+                <div class="phone_inp">
+                    <input class="inp" type="tel" maxlength="10" name="phone" placeholder="טלפון">
+                    <p class="error"></p>
+                </div>
+                <div class="email_inp">
+                    <input class="inp" type="email" name="email" placeholder="מייל">
+                    <p class="error"></p>
+                </div>
+                <div class="checkbox">
+                    <span class="form-text">
+                        <p class="box-text">מאשר את קריאת התקנון</p>
+                    </span>
+                    <label>
+                        <input id="cb1" type="checkbox">
+                    </label>
+                </div>
+                <p class="errorCb"></p>
+                <div class="popup">
+                    <span class="popuptext" id="myPopup">
+                            <p id="popupSetoff">X</p>
+                            הי, לצערינו הפרטים כבר מוזנים ולא ניתן להשתתף שוב
+                        </span>
+                </div>
+                <div class="btn" onclick="opening()">
+                    <input type="hidden" name="platform">
+                    <button type="submit">
+                        שלח 
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-----------------------page:user details form end----------------------->
+
+
+        <a id="terms" href="https://www.rehovot.muni.il/238/">לתקנון הפעילות</a>
+        <p id="bottom_text">בכפוף <a id="subTerm" href="https://www.rehovot.muni.il/238/">לתקנון</a> המבצע. תקופת המבצע 18.12.20-10.12.20. השתתפות מגיל 18 ומעלה בלבד</p>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script> -->
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
