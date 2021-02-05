@@ -149,6 +149,6 @@ app.use(express.static(path.join(__dirname, 'node_modules')))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-const port = process.env.PORT || 80
+const port = process.env.PORT || 5000
 
 server.listen(port, () => console.log(`Server running on port: ${port}`))
